@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+
+    background: #f9f9f9;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #000000cc;
+}
+
+.logo {
+    width: 120px;
+    margin: 60px 0;
+}
+header p {
+    font-size: 14px;
+}
+header h1, main h2 {
+    margin-bottom: 70px;
+}
+header,
+main,
+footer {
+    text-align: center;
+}
+header button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #ff4f4f;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+header, .form, main {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 70px;
+}
+
+.form h2 {
+    text-align: right;
+    color: #ffffffee;
+    font-size: 18px;
+}
+section.form {
+    background: #ff4f4f;
+    padding: 16px 64px;
+    border-radius: 6px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+form input,
+form button {
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #ffffff88;
+    outline: none;
+    color: #ff4f4f;
+    background: white;
+}
+form input {
+    background: transparent;
+    color: white;
+}
+form input::placeholder {
+    color: #ffffffaa;
+}
+form button {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main span {
+    color: #ff4f4f;
+}
+main .donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.blood {
+    color: #ff4f4f;
+    font-weight: bold;
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.blood::before {
+    content: "";
+    background: #ff4f4f11;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+}
+.donor p {
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 16px;
+    border-top: 1px solid rgb(235, 235, 235);
+}
+footer a {
+    text-decoration: none;
+    color: #ff4f4f;
+    font-weight: bold;
+}
+
+.form {
+    transition: all 300ms;
+}
+.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
